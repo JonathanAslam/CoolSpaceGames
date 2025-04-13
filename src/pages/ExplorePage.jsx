@@ -8,7 +8,7 @@ export default function ExplorePage() {
       name: "JohnnyGame",
       title: "Johnny's Adventure",
       description: "Join Johnny on an epic adventure through mysterious lands.",
-      image: "/assets/jonny-game.jpg",
+      // image: "/assets/jonny-game.jpg",
       link: "/JohnnyGame",
     },
     {
@@ -16,7 +16,7 @@ export default function ExplorePage() {
       title: "Dane's Challenge",
       description:
         "Test your skills in Dane's ultimate challenge. Do you know where your children are?",
-      image: "/assets/dane-game.jpg",
+      // image: "/assets/dane-game.jpg",
       link: "/DaneGame",
     },
     {
@@ -24,7 +24,7 @@ export default function ExplorePage() {
       title: "Date Bae",
       description:
         "How much rizz do you have?",
-      image: "/assets/dating-sim.jpg",
+      // image: "/heart.png",
       link: "/DatingSim",
     },
   ];
@@ -35,7 +35,7 @@ export default function ExplorePage() {
       <div className="grid">
         {games.map((game, index) => (
           <article key={index} className="padding grey6 white-text s6">
-            <img className="" src={game.image} alt={game.title} />
+            {/* <img className="" src={game.image} alt={game.title} /> */}
             <div className="padding grey-6">
               <h5>{game.title}</h5>
               <p>{game.description}</p>
