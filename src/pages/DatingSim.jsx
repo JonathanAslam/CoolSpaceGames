@@ -22,9 +22,10 @@ export default function DaneGame() {
                 height="1920px"
                 style={{
                     border: "none",
-                    position: "fixed", // Use absolute positioning
-                    top: "-10%", // Center vertically
-                    left: "-15%", // Center horizontally
+                    position: "absolute", // Use absolute positioning
+                    paddingTop: "0px",
+                    top: "-175%", // Center vertically
+                    left: "10%", // Center horizontally
                 }}
                 allowFullScreen
             ></iframe>

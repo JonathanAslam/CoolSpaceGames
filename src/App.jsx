@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/homePage.jsx";
+import Home from "./pages/HomePage.jsx";
 import ExplorePage from "./pages/ExplorePage";
 import Layout from "./components/Layout.jsx";
 import DaneGame from "./pages/DaneGame.jsx";
