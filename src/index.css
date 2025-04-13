@@ -1,0 +1,7 @@
+@import "../node_modules/beercss/dist/cdn/beer.css";
+body {
+  background: url("./assets/SPACE.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+}
