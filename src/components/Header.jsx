@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 export default function Header() {
   return (
@@ -7,10 +9,10 @@ export default function Header() {
         <h5 className="max center-align">Title</h5>
         <ul className="nav-links">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/explore">Explore Games</a>
+            <Link to="/explore">Explore Games</Link>
           </li>
         </ul>
       </nav>
