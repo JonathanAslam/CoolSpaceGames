@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 
 export default function DaneGame() {
+  const name = "DaneGame";
+
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = `/Build/Johnny'sGame.loader.js`;
+    script.src = `/Build/Alien_Avoider.loader.js`;
     script.async = true;
     document.body.appendChild(script);
     return () => {
@@ -14,16 +16,15 @@ export default function DaneGame() {
   return (
     <div>
       <iframe
-        src="index.html"
+        // src="index.html"
+        src={`/data/${name}/index.html`}
         width="1920px"
         height="1080px"
         style={{
           border: "none",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
+          position: "absolute", // Use absolute positioning
+          top: "-10%", // Center vertically
+          left: "-15%", // Center horizontally
         }}
         allowFullScreen
       ></iframe>

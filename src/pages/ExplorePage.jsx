@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 export default function ExplorePage() {
   const games = [
     {
-      name: "JonnyGame",
-      title: "Jonny's Adventure",
-      description: "Join Jonny on an epic adventure through mysterious lands.",
+      name: "JohnnyGame",
+      title: "Johnny's Adventure",
+      description: "Join Johnny on an epic adventure through mysterious lands.",
       image: "/assets/jonny-game.jpg",
-      link: "../pages/Jonnygame",
+      link: "/JohnnyGame",
     },
     {
       name: "DaneGame",
@@ -17,7 +17,15 @@ export default function ExplorePage() {
       description:
         "Test your skills in Dane's ultimate challenge. Do you know where your children are?",
       image: "/assets/dane-game.jpg",
-      link: "./pages/DaneGame",
+      link: "/DaneGame",
+    },
+    {
+      name: "DatinSim",
+      title: "Date Bae",
+      description:
+        "How much rizz do you have?",
+      image: "/assets/dating-sim.jpg",
+      link: "/DatingSim",
     },
   ];
 
