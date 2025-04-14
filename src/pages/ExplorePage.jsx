@@ -15,15 +15,15 @@ export default function ExplorePage() {
       name: "DaneGame",
       title: "Dane's Challenge",
       description:
-        "Test your skills in Dane's ultimate challenge. Do you know where your children are?",
+        "Test your skills in Dane's ultimate challenge. How long can you survive?",
       // image: "/assets/dane-game.jpg",
       link: "/DaneGame",
     },
     {
       name: "DatinSim",
-      title: "Date Bae",
+      title: "Alien Attraction",
       description:
-        "How much rizz do you have?",
+        "Do you have enough rizz to get a date?",
       // image: "/heart.png",
       link: "/DatingSim",
     },
@@ -32,9 +32,10 @@ export default function ExplorePage() {
   return (
     <div className="padding">
       <h1 className="text-primary center-align">Explore Games</h1>
-      <div className="grid">
+      {/* flexbox allows the tiles to be even spaced */}
+      <div className="grid flex-container">
         {games.map((game, index) => (
-          <article key={index} className="padding grey6 white-text s6">
+          <article key={index} className="padding grey6 white-text s6 flex-item">
             {/* <img className="" src={game.image} alt={game.title} /> */}
             <div className="padding grey-6">
               <h5>{game.title}</h5>

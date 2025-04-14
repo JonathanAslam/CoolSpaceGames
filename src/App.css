@@ -1,3 +1,71 @@
-/* color {
-  color: white;
-} */
+/* general fonts */
+body {
+  font-family: "Orbitron", sans-serif; /* Use Orbitron font */
+  font-weight: bold;
+}
+/* Flex container for the game cards */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next row if needed */
+  justify-content: space-evenly; /* Evenly space items horizontally */
+  align-items: stretch; /* Stretch items to have equal height */
+  gap: 20px; /* Add spacing between items */
+}
+
+/* Flex item styles */
+.flex-item {
+  flex: 1 1 30%; /* Each item takes up 30% of the container width */
+  box-sizing: border-box; /* Include padding and border in width */
+  height: 40vh; /* Each item takes up 50% of the viewport height */
+}
+
+/* Nav Button Styles */
+/* Navigation Bar Button Styles */
+.nav-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display links in a row */
+  justify-content: center; /* Center the links */
+  gap: 20px; /* Add spacing between links */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline-block; /* Ensure each link is inline */
+}
+
+.nav-links a {
+  text-decoration: none; /* Remove underline */
+  color: white; /* Set text color */
+  background-color: #6a0dad; /* Button background color */
+  padding: 10px 20px; /* Add padding for button-like appearance */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.nav-links a:hover {
+  background-color: #4b0082; /* Darker background on hover */
+  color: #ffffff; /* Ensure text remains white */
+}
+
+/* colors for the play now buttons */
+.primary {
+  background-color: #6a0dad; /* Purple background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding for button size */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.primary:hover {
+  background-color: #4b0082; /* Darker purple on hover */
+}
+
+/* text link hover */
+.link-text:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #c67cfa; /* Change color on hover */
+}

@@ -7,6 +7,7 @@ import Layout from "./components/Layout.jsx";
 import DaneGame from "./pages/DaneGame.jsx";
 import JohnnyGame from "./pages/JohnnyGame.jsx";
 import DatingSim from "./pages/DatingSim.jsx";
+import AboutCreators from "./pages/AboutCreators.jsx"; 
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/DaneGame" element={<DaneGame />} />
           <Route path="/JohnnyGame" element={<JohnnyGame />} />
           <Route path="/DatingSim" element={<DatingSim />} />
+          <Route path="/AboutCreators" element={<AboutCreators />} />
         </Routes>
       </Layout>
       {/* <Routes>
