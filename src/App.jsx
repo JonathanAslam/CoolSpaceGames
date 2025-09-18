@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage.jsx";
@@ -7,11 +8,12 @@ import Layout from "./components/Layout.jsx";
 import DaneGame from "./pages/DaneGame.jsx";
 import JohnnyGame from "./pages/JohnnyGame.jsx";
 import DatingSim from "./pages/DatingSim.jsx";
-import AboutCreators from "./pages/AboutCreators.jsx"; 
+import AboutCreators from "./pages/AboutCreators.jsx";
 
 function App() {
   return (
     <Router>
+      <Analytics />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -22,10 +24,6 @@ function App() {
           <Route path="/AboutCreators" element={<AboutCreators />} />
         </Routes>
       </Layout>
-      {/* <Routes>
-        <Route path="/DaneGame" element={<DaneGame />} />
-        <Route path="/jonnyGame" element={<jonnyGame />} />
-      </Routes> */}
     </Router>
   );
 }
